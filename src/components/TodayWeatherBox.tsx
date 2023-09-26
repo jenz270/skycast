@@ -13,7 +13,7 @@ type Props = {
 
 const TodayWeatherBox = ({ city, region, countryCode, weatherData } : Props) => {
   const day = convertDateToDay(weatherData?.dt || "")
-  const iconImageSrc = `../src/assets/${convertIdToIcon(weatherData?.weather[0].id)}`
+  const iconImageSrc = convertIdToIcon(weatherData?.weather[0].id)
 
   return (
     <div className= "flex flex-col w-full space-y-2">

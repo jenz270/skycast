@@ -1,16 +1,25 @@
 import { Location } from "./interface";
+import Asset11d from "/assets/11d.png"
+import Asset9d from "/assets/09d.png"
+import Asset10d from "/assets/10d.png"
+import Asset13d from "/assets/13d.png"
+import Asset50d from "/assets/50d.png"
+import Asset01d from "/assets/01d.png"
+import Asset02d from "/assets/02d.png"
+import Asset03d from "/assets/03d.png"
+import Asset04d from "/assets/04d.png"
 
 const images = {
-    2: "11d.png",
-    3: "09d.png",
-    5: "10d.png",
-    6: "13d.png",
-    7:  "50d.png",
-    800:  "01d.png",
-    801:  "02d.png",
-    802:  "03d.png",
-    803:  "04d.png",
-    804:  "04d.png"
+    2: Asset11d,
+    3: Asset9d,
+    5: Asset10d,
+    6: Asset13d,
+    7:  Asset50d,
+    800:  Asset01d,
+    801:  Asset02d,
+    802:  Asset03d,
+    803:  Asset04d,
+    804:  Asset04d
 }
 
 const imageMap = new Map<number, string>(Object.entries(images).map(([key, value]) => [Number(key), value]));

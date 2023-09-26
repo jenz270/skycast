@@ -9,7 +9,7 @@ type Props = {
 }
 
 const ForecastDayRow = ({ day, highTemp, lowTemp, icon }: Props) => {
-  const iconImageSrc = `../src/assets/${convertIdToIcon(icon)}`
+  const iconImageSrc = convertIdToIcon(icon)
 
   return (
     <div className="flex flex-row">
